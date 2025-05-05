@@ -1,14 +1,49 @@
+import { FaLinkedin, FaWhatsapp, FaGithub, FaEnvelope } from "react-icons/fa";
+
 export const Contact = () => {
+    const linkedinUrl = import.meta.env.VITE_LINKEDIN_URL;
+    const whatsappUrl = import.meta.env.VITE_WHATSAPP_URL;
+    const githubUrl = import.meta.env.VITE_GITHUB_URL;
+    const emailUrl = import.meta.env.VITE_CONTACT_EMAIL;
     return (
         <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-sky-100 to-white px-4 py-12">
-            <div className="max-w-3xl w-full bg-white shadow-xl rounded-2xl p-8">
+            <div className="max-w-3xl w-full bg-white shadow-2xl rounded-2xl p-8">
                 <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Me</h2>
-                <form className="space-y-6">
+
+                {/* Social Media Icons */}
+                <div className="flex justify-center gap-6 mb-8">
+                    <a href={linkedinUrl} target="_blank" rel="noopener noreferrer"
+                       className="text-sky-600 hover:text-sky-800 text-3xl transition-all">
+                        <FaLinkedin />
+                    </a>
+                    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer"
+                       className="text-green-500 hover:text-green-700 text-3xl transition-all">
+                        <FaWhatsapp />
+                    </a>
+                    <a href={githubUrl} target="_blank" rel="noopener noreferrer"
+                       className="text-gray-800 hover:text-black text-3xl transition-all">
+                        <FaGithub />
+                    </a>
+                    <a
+                        href={`mailto:${emailUrl}`}
+                        className="text-red-500 hover:text-red-700 text-3xl transition-all"
+                    >
+                        <FaEnvelope />
+                    </a>
+                </div>
+
+                {/* Contact Form */}
+                <form
+                    className="space-y-6"
+                    action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST"
+                >
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                             Your Name
                         </label>
                         <input
+                            name="name"
                             type="text"
                             id="name"
                             className="mt-1 w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-sky-400"
@@ -21,6 +56,7 @@ export const Contact = () => {
                             Your Email
                         </label>
                         <input
+                            name="email"
                             type="email"
                             id="email"
                             className="mt-1 w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-sky-400"
@@ -33,6 +69,7 @@ export const Contact = () => {
                             Message
                         </label>
                         <textarea
+                            name="message"
                             id="message"
                             rows={5}
                             className="mt-1 w-full border border-gray-300 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-sky-400"
