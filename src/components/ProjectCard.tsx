@@ -50,6 +50,7 @@ export const ProjectCard = ({
                     />
                     <div className="p-4 bg-white rounded-b-2xl">
                         <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">{title}</h3>
+                        <p className="text-sm mb-2">{description}</p>
 
                         <div className="flex flex-wrap justify-center gap-2">
                             {tech.map((item, index) => (
