@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "./assets/project_thumbnails/movie-site.png",
+    "image": "./assets/movie-site.png",
     "video": "https://drive.google.com/file/d/1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37/preview",
     "title": "Movie Site using TMDB API",
     "description": "A responsive movie browser built with React and Vite using TMDB API for data and Appwrite for database and user management.",
