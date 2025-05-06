@@ -61,40 +61,57 @@ export const ProjectCard = ({
                                 </span>
                             ))}
                         </div>
+                        <div className="flex gap-4 mt-4">
+                            <button
+                                onClick={() => setShowPreview(true)}
+                                className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"
+                            >
+                                ▶ Preview
+                            </button>
+
+                            <a
+                                href={github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-black text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"
+                            >
+                                GitHub
+                            </a>
+                        </div>
                     </div>
 
                     {/*Mouse enter or on click action*/}
-                    {showOverlay && (
-                        <div className="absolute inset-0 bg-black/60 backdrop-blur-md flex flex-col justify-center items-center p-4 text-white text-center transition-opacity duration-300">
-                            <h3 className="text-xl font-bold mb-2">{title}</h3>
-                            <p className="text-sm mb-2">{description}</p>
-                            <div className="text-sm italic text-sky-200 flex flex-wrap justify-center gap-2">
-                                {tech.map((item, index) => (
-                                    <span key={index} className="px-2 py-0.5 bg-white/10 rounded-full">
-                                        {item}
-                                    </span>
-                                ))}
-                            </div>
+                    {/*{showOverlay && (*/}
+                    {/*    <div className="absolute inset-0 bg-black/60 backdrop-blur-md flex flex-col justify-center items-center p-4 text-white text-center transition-opacity duration-300">*/}
+                    {/*        <h3 className="text-xl font-bold mb-2">{title}</h3>*/}
+                    {/*        <p className="text-sm mb-2">{description}</p>*/}
+                    {/*        <div className="text-sm italic text-sky-200 flex flex-wrap justify-center gap-2">*/}
+                    {/*            {tech.map((item, index) => (*/}
+                    {/*                <span key={index} className="px-2 py-0.5 bg-white/10 rounded-full">*/}
+                    {/*                    {item}*/}
+                    {/*                </span>*/}
+                    {/*            ))}*/}
+                    {/*        </div>*/}
 
-                            <div className="flex gap-4 mt-4">
-                                <button
-                                    onClick={() => setShowPreview(true)}
-                                    className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"
-                                >
-                                    ▶ Preview
-                                </button>
+                    {/*        <div className="flex gap-4 mt-4">*/}
+                    {/*            <button*/}
+                    {/*                onClick={() => setShowPreview(true)}*/}
+                    {/*                className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"*/}
+                    {/*            >*/}
+                    {/*                ▶ Preview*/}
+                    {/*            </button>*/}
 
-                                <a
-                                    href={github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-black text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"
-                                >
-                                    GitHub
-                                </a>
-                            </div>
-                        </div>
-                    )}
+                    {/*            <a*/}
+                    {/*                href={github}*/}
+                    {/*                target="_blank"*/}
+                    {/*                rel="noopener noreferrer"*/}
+                    {/*                className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-black text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"*/}
+                    {/*            >*/}
+                    {/*                GitHub*/}
+                    {/*            </a>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*)}*/}
                 </div>
             </div>
 
