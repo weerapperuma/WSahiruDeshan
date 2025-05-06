@@ -1,5 +1,6 @@
 import {Navbar} from "./components/NavBar.tsx";
 import {Outlet} from "react-router-dom";
+import Footer from "./components/Footer.tsx";
 
 const App = () => {
     return (
@@ -11,13 +12,14 @@ const App = () => {
         }}
         >
             <Navbar/>
-            {/*<div className="backdrop-blur-sm bg-white/70 min-h-screen">*/}
-            {/*    <Outlet />*/}
-            {/*</div>*/}
-            <Outlet/>
+
+            <main className="pt-16">
+                <Outlet />
+            </main>
+            <Footer/>
 
         </div>
     );
 };
 
-export default App; // ✅ default export
+export default App;

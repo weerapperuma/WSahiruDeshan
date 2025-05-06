@@ -29,40 +29,57 @@ export const ProjectCard = ({
     description,
     tech,
     github,
-}: ProjectCardProps) => {
+                            }: ProjectCardProps) => {
     const [showOverlay, setShowOverlay] = useState(false);
     const [showPreview, setShowPreview] = useState(false);
 
     return (
         <>
-            <div className="bg-white rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-            {/* Image & Hover Content */}
+            <div className="bg-white rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col h-[500px]">
+            {/* Hover Card Content */}
                 <div
                     className="relative group cursor-pointer"
                     onMouseEnter={() => setShowOverlay(true)}
                     onMouseLeave={() => setShowOverlay(false)}
                     onTouchStart={() => setShowOverlay(!showOverlay)}
                 >
-                    <img
-                        src={getImage(image)}
-                        alt={title}
-                        className="w-full h-[260px] object-cover"
-                    />
-                    <div className="p-4 bg-white rounded-b-2xl">
-                        <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">{title}</h3>
-                        <p className="text-sm mb-2">{description}</p>
+                    {/*Image Area*/}
+                    <div className="h-[260px] w-full">
+                        <img
+                            src={getImage(image)}
+                            alt={title}
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                    {/*Content Area*/}
+                    <div className="p-4 flex flex-col justify-between flex-grow">
+                        {/*Title Area*/}
+                        <div className="max-h-[20px] flex items-center justify-center">
+                            <h3 className="text-lg font-semibold text-gray-800 text-center">
+                                {title}
+                            </h3>
+                        </div>
+                        {/* Description Area */}
+                        <div className="h-[50px] overflow-hidden text-center flex items-center justify-center my-2">
+                            <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
+                                {description}
+                            </p>
+                        </div>
 
-                        <div className="flex flex-wrap justify-center gap-2">
+                        {/*Tect Stacks Area*/}
+                        <div className="h-[60px] flex flex-wrap justify-center items-center gap-2 overflow-hidden mt-2">
                             {tech.map((item, index) => (
                                 <span
                                     key={index}
-                                    className="text-xs font-medium px-3 py-1 bg-gradient-to-r from-sky-100 to-blue-100 text-blue-800 rounded-full shadow-sm"
+                                    className="text-xs font-medium px-3 py-1 bg-gradient-to-r from-sky-100 to-blue-100 text-blue-800 rounded-full shadow-sm whitespace-nowrap"
                                 >
                                     {item}
                                 </span>
                             ))}
                         </div>
-                        <div className="flex gap-4 mt-4">
+
+                        {/*Button Area*/}
+                        <div className="flex justify-center gap-4 mt-4">
                             <button
                                 onClick={() => setShowPreview(true)}
                                 className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"
@@ -81,42 +98,9 @@ export const ProjectCard = ({
                         </div>
                     </div>
 
-                    {/*Mouse enter or on click action*/}
-                    {/*{showOverlay && (*/}
-                    {/*    <div className="absolute inset-0 bg-black/60 backdrop-blur-md flex flex-col justify-center items-center p-4 text-white text-center transition-opacity duration-300">*/}
-                    {/*        <h3 className="text-xl font-bold mb-2">{title}</h3>*/}
-                    {/*        <p className="text-sm mb-2">{description}</p>*/}
-                    {/*        <div className="text-sm italic text-sky-200 flex flex-wrap justify-center gap-2">*/}
-                    {/*            {tech.map((item, index) => (*/}
-                    {/*                <span key={index} className="px-2 py-0.5 bg-white/10 rounded-full">*/}
-                    {/*                    {item}*/}
-                    {/*                </span>*/}
-                    {/*            ))}*/}
-                    {/*        </div>*/}
-
-                    {/*        <div className="flex gap-4 mt-4">*/}
-                    {/*            <button*/}
-                    {/*                onClick={() => setShowPreview(true)}*/}
-                    {/*                className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"*/}
-                    {/*            >*/}
-                    {/*                ▶ Preview*/}
-                    {/*            </button>*/}
-
-                    {/*            <a*/}
-                    {/*                href={github}*/}
-                    {/*                target="_blank"*/}
-                    {/*                rel="noopener noreferrer"*/}
-                    {/*                className="inline-flex items-center gap-2 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-black text-white font-medium py-2 px-5 rounded-full shadow-lg transition-all duration-300"*/}
-                    {/*            >*/}
-                    {/*                GitHub*/}
-                    {/*            </a>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*)}*/}
                 </div>
             </div>
 
-            {/* Preview Video Modal */}
             {/* Preview Video Modal */}
             {showPreview && (
                 <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
