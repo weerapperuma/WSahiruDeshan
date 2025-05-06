@@ -16,9 +16,9 @@ const skills = [
 ];
 
 const certificates = [
-    "/src/assets/certifications/Build Job-Winning MERN & React Projects to Land Dream Jobs.jpg",
-    "/src/assets/certifications/Python Bootcamp-Beginner to Master Programming.jpg",
-    "/src/assets/certifications/Python Bootcamp-Beginner to Master Programming.jpg",
+    "src/assets/certificate_Build Job-Winning MERN & React Projects to Land Dream Jobs.jpg",
+    "src/assets/certificate_Python Bootcamp-Beginner to Master Programming.jpg",
+    "src/assets/certificate_Python Bootcamp-Beginner to Master Programming.jpg",
     // Add paths to your certification images
 ];
 
