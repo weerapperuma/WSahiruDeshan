@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "./assets/movie-site.png",
+    "image": "src/assets/movie-site.png",
     "video": "https://drive.google.com/file/d/1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37/preview",
     "title": "Movie Site using TMDB API",
     "description": "A responsive movie browser built with React and Vite using TMDB API for data and Appwrite for database and user management.",
@@ -15,51 +15,6 @@
     "title": "Ceylon Wear Ecommerce Site",
     "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
     "tech": ["Vite", "MongoDB", "Stripe", "Vercel", "CI/CD", "Redux"],
-    "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
-  },
-  {
-    "id": 3,
-    "image": "src/assets/cloth-store.png",
-    "video": "https://drive.google.com/uc?export=view&id=1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37",
-    "title": "Ceylon Wear Ecommerce Site",
-    "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
-    "tech": ["Vite", "MongoDB", "Stripe", "Vercel", "CI/CD", "Redux"],
-    "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
-  },
-  {
-    "id": 4,
-    "image": "src/assets/cloth-store.png",
-    "video": "https://drive.google.com/uc?export=view&id=1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37",
-    "title": "Ceylon Wear Ecommerce Site",
-    "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
-    "tech": ["Vite", "MongoDB", "Stripe", "Vercel", "CI/CD", "Redux"],
-    "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
-  },
-  {
-    "id": 5,
-    "image": "src/assets/cloth-store.png",
-    "video": "https://drive.google.com/uc?export=view&id=1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37",
-    "title": "Ceylon Wear Ecommerce Site",
-    "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
-    "tech": ["Vite", "MongoDB", "Stripe", "Vercel", "CI/CD", "Redux"],
-    "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
-  },
-  {
-    "id": 6,
-    "image": "src/assets/cloth-store.png",
-    "video": "https://drive.google.com/uc?export=view&id=1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37",
-    "title": "Ceylon Wear Ecommerce Site",
-    "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
-    "tech": ["Vite", "MongoDB", "Stripe", "Vercel","CI/CD", "Redux"],
-    "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
-  },
-  {
-    "id": 7,
-    "image": "src/assets/cloth-store.png",
-    "video": "https://drive.google.com/uc?export=view&id=1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37",
-    "title": "Ceylon Wear Ecommerce Site",
-    "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
-    "tech": ["Vite", "MongoDB", "Stripe", "Vercel","CI/CD", "Redux"],
     "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
   }
 ]

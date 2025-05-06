@@ -18,8 +18,6 @@ const skills = [
 const certificates = [
     "/certificate_Build Job-Winning MERN & React Projects to Land Dream Jobs.jpg",
     "/certificate_Python Bootcamp-Beginner to Master Programming.jpg",
-    "/certificate_Python Bootcamp-Beginner to Master Programming.jpg",
-    // Add paths to your certification images
 ];
 
 const Skills = () => {
@@ -32,13 +30,14 @@ const Skills = () => {
                 {skills.map((skill) => (
                     <div
                         key={skill.name}
-                        className="flex flex-col items-center justify-center p-4 rounded-lg shadow-lg hover:bg-gray-100"
+                        className="flex flex-col items-center justify-center p-4 min-h-[120px] w-full rounded-xl shadow-md bg-white border border-gray-200 hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-100 hover:to-purple-100"
                     >
-                        <i className={`${skill.icon} text-4xl text-blue-600`}></i>
-                        <p className="mt-2 text-lg font-medium">{skill.name}</p>
+                        <i className={`${skill.icon} text-4xl text-indigo-600`}></i>
+                        <p className="mt-2 text-lg font-semibold text-gray-800">{skill.name}</p>
                     </div>
                 ))}
             </div>
+
 
             {/* Button to Navigate to Projects Page */}
             <div className="text-center mb-8">

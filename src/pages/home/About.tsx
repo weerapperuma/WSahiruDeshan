@@ -5,7 +5,7 @@ const About = () => {
                 <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-6">About Me</h1>
                 <div className="flex flex-col items-center">
                     <img
-                        src="../../assets/Circleedge.jpg"
+                        src="/Circleedge.jpg"
                         alt="Your Profile Picture"
                         className="w-32 h-32 rounded-full border-4 border-blue-500 mb-6"
                     />
