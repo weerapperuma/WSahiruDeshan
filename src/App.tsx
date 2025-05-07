@@ -7,7 +7,7 @@ const App = () => {
         <div
             className="min-h-screen bg-cover bg-center bg-fixed"
             style={{
-                backgroundImage: "url('/laptop_bg.jpg')",
+                backgroundImage: "url('/laptop_bg2.jpg')",
         }}
         >
             <Navbar/>
