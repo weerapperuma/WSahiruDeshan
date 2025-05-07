@@ -3,21 +3,18 @@ import { ProjectCard } from "../components/ProjectCard";
 
 export const Projects = () => {
     return (
-        <section className="min-h-screen bg-gradient-to-br from-white to-gray-100 px-4 pt-32 pb-10">
-            <div className="max-w-6xl mx-auto">
-
+        <div className="min-h-screen bg-gradient-to-b from-white/30 to-white/70 py-20 px-6 sm:px-8 backdrop-blur-lg">
+            <div className="max-w-6xl mx-auto bg-white/60 backdrop-blur-md border border-white/40 rounded-3xl shadow-2xl p-10">
                 {/* Title Section */}
-                <div className="mb-12 text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
-                        🚀 My Top Projects
-                    </h2>
-                    <p className="mt-2 text-gray-500 text-base">
-                        A collection of work I’m most proud of
-                    </p>
-                </div>
+                <h1 className="text-5xl font-extrabold text-center text-gray-900 mb-10 tracking-tight">
+                    🚀 My Top Projects
+                </h1>
+                <p className="text-center text-gray-700 text-lg mb-10 leading-relaxed">
+                    A collection of work I’m most proud of — crafted with passion and precision.
+                </p>
 
                 {/* Project Grid */}
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.id}
@@ -30,8 +27,7 @@ export const Projects = () => {
                         />
                     ))}
                 </div>
-
             </div>
-        </section>
+        </div>
     );
 };

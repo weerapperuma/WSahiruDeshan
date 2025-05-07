@@ -18,8 +18,8 @@ export const Navbar = () => {
         <header className="fixed top-0 w-full bg-white shadow-md z-50">
             <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                 {/* Logo */}
-                <div className="text-2xl font-bold text-gray-800">
-                    <Link to="/">Sahiru.dev</Link>
+                <div className="text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 drop-shadow-md">
+                    <Link to="/">Sahiru D Weerapperuma</Link>
                 </div>
 
                 {/* Desktop Menu */}
