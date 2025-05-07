@@ -73,7 +73,9 @@ export const Hero = () => {
             <div className="relative z-10">
                 <div className="h-screen" />
                 <About />
+                <div className="my-12 border-t border-gray-300" />
                 <Biography />
+                <div className="my-12 border-t border-gray-300" />
                 <Projects />
             </div>
         </div>

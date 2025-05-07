@@ -23,7 +23,7 @@ const certificates = [
 const Skills = () => {
     return (
         <div className="min-h-screen bg-white/80 py-12 px-6 sm:px-8 backdrop-blur-sm rounded-xl shadow-md container mx-auto p-4">
-            <h2 className="text-3xl font-bold text-center my-8">My Skills</h2>
+            <h2 className="text-3xl font-bold text-center my-8 text-gray-700">My Skills</h2>
 
             {/* Skill Icons */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
@@ -50,7 +50,8 @@ const Skills = () => {
             </div>
 
             {/* Certification Grid */}
-            <h2 className="text-3xl font-bold text-center my-8">Certifications</h2>
+            <h2 className="text-3xl font-bold text-center my-8 text-gray-700">Certifications</h2>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {certificates.map((cert, index) => (
                     <CertificationCard key={index} imageUrl={cert} />

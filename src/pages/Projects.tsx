@@ -3,7 +3,7 @@ import { ProjectCard } from "../components/ProjectCard";
 
 export const Projects = () => {
     return (
-        <div className="w-full min-h-screen bg-white/60 backdrop-blur-md border border-white/40 rounded-none sm:rounded-3xl shadow-2xl p-6 sm:p-10 flex flex-col justify-center">
+        <div className="w-full min-h-screen bg-white/80 backdrop-blur-md border border-white/40 rounded-none sm:rounded-3xl shadow-2xl p-6 sm:p-10 flex flex-col justify-center">
 
             {/* Title Section */}
             <div className="mb-12 text-center">
