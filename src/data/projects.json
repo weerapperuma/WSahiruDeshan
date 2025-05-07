@@ -16,5 +16,32 @@
     "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
     "tech": ["Vite", "MongoDB", "Stripe", "Vercel", "CI/CD", "Redux"],
     "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
+  },
+  {
+    "id": 2,
+    "image": "src/assets/cloth-store.png",
+    "video": "https://drive.google.com/uc?export=view&id=1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37",
+    "title": "Ceylon Wear Ecommerce Site",
+    "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
+    "tech": ["Vite", "MongoDB", "Stripe", "Vercel", "CI/CD", "Redux"],
+    "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
+  },
+  {
+    "id": 2,
+    "image": "src/assets/cloth-store.png",
+    "video": "https://drive.google.com/uc?export=view&id=1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37",
+    "title": "Ceylon Wear Ecommerce Site",
+    "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
+    "tech": ["Vite", "MongoDB", "Stripe", "Vercel", "CI/CD", "Redux"],
+    "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
+  },
+  {
+    "id": 2,
+    "image": "src/assets/cloth-store.png",
+    "video": "https://drive.google.com/uc?export=view&id=1DDxOb6rNGhsMQTZRl0-PLeZeXeAbNt37",
+    "title": "Ceylon Wear Ecommerce Site",
+    "description": "A full-featured ecommerce platform built with React and Vite, supporting online payments via Stripe. CI/CD integration and MongoDB database with secure user authentication and Redux for state management.",
+    "tech": ["Vite", "MongoDB", "Stripe", "Vercel", "CI/CD", "Redux"],
+    "github": "https://github.com/weerapperuma/CeylonWear-frontend.git"
   }
 ]

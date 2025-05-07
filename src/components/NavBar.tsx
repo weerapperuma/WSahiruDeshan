@@ -19,7 +19,7 @@ export const Navbar = () => {
             <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
                 {/* Logo */}
                 <div className="text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 drop-shadow-md">
-                    <Link to="/">Sahiru D Weerapperuma</Link>
+                    <Link to="/">Sahiru D.</Link>
                 </div>
 
                 {/* Desktop Menu */}
