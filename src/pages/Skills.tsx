@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import CertificationCard from "../components/CertificationCard.tsx";
-import { Code, Database, Globe, Palette, Cpu, Zap, Shield, Rocket, Coffee, Leaf, Database as DbIcon, GitBranch } from "lucide-react";
+import { Code, Database, Globe, Palette, Cpu, Zap, Shield, Rocket, Coffee, Leaf } from "lucide-react";
 
 const Skills = () => {
     const skillCategories = [

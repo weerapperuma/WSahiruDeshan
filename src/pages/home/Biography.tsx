@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { CalendarDays, GraduationCap, Rocket, Trophy, Award, BookOpen, Users, Zap } from "lucide-react";
+import { GraduationCap, Rocket, Trophy, Award, BookOpen, Users, Zap } from "lucide-react";
 
 const Biography: React.FC = () => {
     const [expanded, setExpanded] = useState(false);

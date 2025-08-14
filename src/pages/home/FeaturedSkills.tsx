@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Database, Globe, Palette, Cpu, Zap, Shield, Rocket } from "lucide-react";
+import { Database, Globe, Palette, Cpu, Zap, Shield, Rocket } from "lucide-react";
 
 const FeaturedSkills = () => {
     const skillCategories = [

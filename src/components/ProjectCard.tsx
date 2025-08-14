@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Github, ExternalLink, Play } from "lucide-react";
+import { Github, Play } from "lucide-react";
 
 interface ProjectCardProps {
     image: string;
@@ -32,7 +32,6 @@ export const ProjectCard = ({
     tech,
     github,
 }: ProjectCardProps) => {
-    const [showOverlay, setShowOverlay] = useState(false);
     const [showPreview, setShowPreview] = useState(false);
 
     return (
