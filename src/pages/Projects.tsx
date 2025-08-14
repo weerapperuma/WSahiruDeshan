@@ -40,7 +40,7 @@ export const Projects = () => {
                 viewport={{ once: true }}
                 className="flex flex-wrap justify-center gap-3 mb-12"
             >
-                {categories.map((category, index) => (
+                {categories.map((category) => (
                     <motion.button
                         key={category}
                         whileHover={{ scale: 1.05, y: -2 }}
