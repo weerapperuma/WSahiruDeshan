@@ -143,7 +143,7 @@ const About = () => {
                     {/* Stats Section */}
                     <div className="grid grid-cols-2 gap-4">
                         {[
-                            { number: "3+", label: "Years Experience", color: "from-cyan-500 to-blue-600" },
+                            { number: "4+", label: "Months Experience", color: "from-cyan-500 to-blue-600" },
                             { number: "15+", label: "Projects Built", color: "from-purple-500 to-pink-600" },
                             { number: "5+", label: "Technologies", color: "from-green-500 to-emerald-600" },
                             { number: "100%", label: "Passion", color: "from-orange-500 to-red-600" },

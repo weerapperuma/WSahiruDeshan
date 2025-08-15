@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { ChevronDown, Github, Linkedin, Mail, Download, Code, Database, Globe } from "lucide-react";
+import { Github, Linkedin, Mail, Download, Code, Database, Globe } from "lucide-react";
 import About from "./home/About.tsx";
 import Biography from "./home/Biography.tsx";
 import FeaturedSkills from "./home/FeaturedSkills.tsx";
@@ -100,11 +100,15 @@ export const Hero = () => {
                                 sequence={[
                                     "🚀 Full-Stack Developer",
                                     2000,
-                                    "⚡ Backend Enthusiast",
+                                    "⚡ DevOps Engineer",
                                     2000,
-                                    "🎯 Problem Solver",
+                                    "🤖 Machine Learning Problem Solver",
                                     2000,
-                                    "🐟 Monster Fish Keeper",
+                                    "💼 Former Intern at STAR Group Katunayaka",
+                                    2000,
+                                    "🔧 Associate Software Engineer at Softcare",
+                                    2000,
+                                    "☕ Spring Boot Microservices",
                                     2000,
                                 ]}
                                 wrapper="span"
@@ -149,14 +153,17 @@ export const Hero = () => {
                             />
                         </motion.button>
                         
-                        <motion.button
+                        <motion.a
+                            href="https://wa.me/94784320108"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             whileHover={{ scale: 1.05, y: -2 }}
                             whileTap={{ scale: 0.95 }}
                             className="group border-2 border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-full font-semibold text-lg backdrop-blur-md bg-white/10 hover:bg-white/20 transition-all duration-300 flex items-center gap-3"
                         >
                             <Mail size={20} />
                             Let's Talk
-                        </motion.button>
+                        </motion.a>
                     </motion.div>
 
                     {/* Social Links */}
@@ -167,13 +174,15 @@ export const Hero = () => {
                         className="flex justify-center gap-6 mb-16"
                     >
                         {[
-                            { icon: <Github size={24} />, href: "#", label: "GitHub" },
-                            { icon: <Linkedin size={24} />, href: "#", label: "LinkedIn" },
-                            { icon: <Mail size={24} />, href: "#", label: "Email" }
+                            { icon: <Github size={24} />, href: "https://github.com/sahiru-deshan", label: "GitHub" },
+                            { icon: <Linkedin size={24} />, href: "https://linkedin.com/in/sahiru-deshan", label: "LinkedIn" },
+                            { icon: <Mail size={24} />, href: "mailto:sahiru.deshan@softcare.lk", label: "Email" }
                         ].map((social, index) => (
                             <motion.a
                                 key={index}
                                 href={social.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 whileHover={{ scale: 1.2, y: -5 }}
                                 whileTap={{ scale: 0.9 }}
                                 className="group p-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 transition-all duration-300 backdrop-blur-md"
@@ -194,12 +203,20 @@ export const Hero = () => {
                         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
                     >
                         <motion.div
-                            animate={{ y: [0, 10, 0] }}
-                            transition={{ duration: 2, repeat: Infinity }}
-                            className="text-white/60 text-center"
+                            animate={{ y: [0, 8, 0] }}
+                            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                            className="text-white/40 text-center cursor-pointer group"
                         >
-                            <ChevronDown size={32} />
-                            <p className="text-sm mt-2">Scroll to explore</p>
+                            <div className="w-8 h-12 border-2 border-white/30 rounded-full mx-auto mb-2 relative">
+                                <motion.div
+                                    animate={{ y: [0, 16, 0] }}
+                                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                                    className="w-1 h-3 bg-white/60 rounded-full absolute top-2 left-1/2 transform -translate-x-1/2"
+                                />
+                            </div>
+                            <p className="text-xs font-light opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                                Scroll to explore
+                            </p>
                         </motion.div>
                     </motion.div>
                 </motion.div>
@@ -209,11 +226,11 @@ export const Hero = () => {
             <div className="relative z-10">
                 <div className="h-screen" />
                 <About />
-                <div className="my-12 border-t border-gray-300/30" />
+                <div className="my-8 border-t border-gray-300/20" />
                 <Biography />
-                <div className="my-12 border-t border-gray-300/30" />
+                <div className="my-8 border-t border-gray-300/20" />
                 <FeaturedSkills />
-                <div className="my-12 border-t border-gray-300/30" />
+                <div className="my-8 border-t border-gray-300/20" />
                 <Projects />
             </div>
         </div>

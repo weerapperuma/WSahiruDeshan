@@ -4,7 +4,6 @@ import { Mail, Phone, MapPin, Clock, Send, MessageCircle, User, AtSign } from "l
 
 export const Contact = () => {
     const linkedinUrl = import.meta.env.VITE_LINKEDIN_URL;
-    const whatsappUrl = import.meta.env.VITE_WHATSAPP_URL;
     const githubUrl = import.meta.env.VITE_GITHUB_URL;
     const emailUrl = import.meta.env.VITE_CONTACT_EMAIL;
 
@@ -19,8 +18,8 @@ export const Contact = () => {
         {
             icon: <Phone className="text-green-500" size={24} />,
             title: "WhatsApp",
-            value: "+94 71 234 5678",
-            action: whatsappUrl || "#",
+            value: "+94 78 432 0108",
+            action: "https://wa.me/94784320108",
             color: "from-green-500 to-emerald-600"
         },
         {
@@ -57,7 +56,7 @@ export const Contact = () => {
         {
             icon: <FaWhatsapp className="text-2xl" />,
             name: "WhatsApp",
-            url: whatsappUrl || "#",
+            url: "https://wa.me/94784320108",
             color: "from-green-600 to-green-700",
             hoverColor: "hover:from-green-500 hover:to-green-600"
         },
