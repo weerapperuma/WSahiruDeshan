@@ -7,45 +7,53 @@ const Biography: React.FC = () => {
 
     const timeline = [
         {
-            year: "2023 - Present",
-            title: "GDSE Programme at IJSE",
+            year: "2025 - Present",
+            title: "Top-up Degree in Computer Science at University of Greater Manchester",
             icon: <Rocket className="text-white" size={20} />,
-            description: "Currently participating in the Graduate Diploma in Software Engineering (GDSE) at IJSE.",
+            description: "Currently reading for a top-up degree in Computer Science at the University of Greater Manchester.",
             highlight: true,
             color: "from-blue-500 to-cyan-600",
-            achievements: ["Advanced Java Development", "Software Architecture", "Database Design"]
+            achievements: ["Advanced Computer Science", "University Level Education", "International Experience"]
+        },
+        {
+            year: "2022 - 2025",
+            title: "Graduation Diploma in Software Engineering at IJSE",
+            icon: <GraduationCap className="text-white" size={20} />,
+            description: "Completed the Graduation Diploma in Software Engineering (GDSE) at IJSE.",
+            color: "from-purple-500 to-pink-600",
+            achievements: ["Advanced Java Development", "Software Architecture", "Database Design", "Full-Stack Development"]
         },
         {
             year: "2021 - 2022",
             title: "Diploma in Software Engineering at NIBM",
             icon: <GraduationCap className="text-white" size={20} />,
             description: "Completed a diploma in software engineering at the National Institute of Business Management (NIBM).",
-            color: "from-purple-500 to-pink-600",
-            achievements: ["Web Development", "Programming Fundamentals", "Project Management"]
+            color: "from-green-500 to-emerald-600",
+            achievements: ["Web Development", "Programming Fundamentals", "Project Management", "Software Engineering Basics"]
         },
         {
             year: "2020",
-            title: "A/L Exam - Maths Stream",
+            title: "Advanced Level Exam - Maths Stream",
             icon: <BookOpen className="text-white" size={20} />,
-            description: "Attempted Advanced Level examination in the Maths stream with result: S1.",
-            color: "from-green-500 to-emerald-600",
+            description: "Attempted Advanced Level examination in the Maths stream.",
+            color: "from-orange-500 to-red-600",
             achievements: ["Mathematics", "Physics", "Chemistry"]
         },
         {
             year: "2017",
-            title: "A/L Exam - Commerce Stream",
+            title: "Advanced Level Exam - Commerce Stream",
             icon: <Users className="text-white" size={20} />,
-            description: "Completed A/Ls in the Commerce stream with results: C1, S1.",
-            color: "from-orange-500 to-red-600",
+            description: "Completed Advanced Level examination in the Commerce stream.",
+            color: "from-indigo-500 to-purple-600",
             achievements: ["Business Studies", "Economics", "Accounting"]
         },
         {
-            year: "2004 - 2017",
-            title: "School Education at Kularathna College, Ambalangoda",
+            year: "2014",
+            title: "Ordinary Level Exam",
             icon: <GraduationCap className="text-white" size={20} />,
-            description: "Attended school and passed O/Ls with A3, B1, C5.",
-            color: "from-indigo-500 to-purple-600",
-            achievements: ["Academic Excellence", "Leadership Skills", "Team Collaboration"]
+            description: "Completed Ordinary Level examination.",
+            color: "from-yellow-500 to-orange-600",
+            achievements: ["Core Subjects", "Academic Foundation", "Basic Education"]
         },
     ];
 
@@ -62,23 +70,23 @@ const Biography: React.FC = () => {
     ];
 
     return (
-        <div className="w-full min-h-screen bg-gradient-to-br from-gray-900/90 via-gray-800/90 to-gray-900/90 backdrop-blur-md border border-gray-700/50 rounded-none sm:rounded-3xl shadow-2xl p-6 sm:p-10">
+        <div className="w-full min-h-screen bg-gradient-to-br from-gray-900/90 via-gray-800/90 to-gray-900/90 backdrop-blur-md border border-gray-700/50 rounded-none sm:rounded-3xl shadow-2xl p-4 sm:p-6 lg:p-10">
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-center mb-16"
+                className="text-center mb-12 sm:mb-16"
             >
-                <h1 className="text-5xl sm:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 mb-6">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 mb-4 sm:mb-6">
                     🚀 My Journey
                 </h1>
-                <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
                     From student to developer, every step has shaped my passion for technology and innovation
                 </p>
             </motion.div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
                 {/* Main Timeline */}
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -87,7 +95,7 @@ const Biography: React.FC = () => {
                     viewport={{ once: true }}
                     className="lg:col-span-2"
                 >
-                    <div className="relative pl-8 before:absolute before:top-0 before:left-6 before:w-1 before:h-full before:bg-gradient-to-b from-cyan-500 via-blue-500 to-purple-500 before:rounded-full">
+                    <div className="relative pl-4 sm:pl-8 before:absolute before:top-0 before:left-3 sm:before:left-6 before:w-1 before:h-full before:bg-gradient-to-b from-cyan-500 via-blue-500 to-purple-500 before:rounded-full">
                         {timeline.map((item, idx) => (
                             <motion.div
                                 key={idx}
@@ -95,12 +103,12 @@ const Biography: React.FC = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6, delay: 0.3 + idx * 0.1 }}
                                 viewport={{ once: true }}
-                                className="relative mb-12 flex items-start gap-6"
+                                className="relative mb-8 sm:mb-12 flex flex-col sm:flex-row items-start gap-3 sm:gap-6"
                             >
                                 {/* Icon */}
                                 <motion.div
                                     whileHover={{ scale: 1.1, rotate: 5 }}
-                                    className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 mt-2 shadow-xl
+                                    className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shrink-0 mt-2 shadow-xl
                                         border-4 border-white/50 z-10 bg-gradient-to-tr ${item.color} ring-2 ring-white/30`}
                                 >
                                     {item.icon}
@@ -109,20 +117,20 @@ const Biography: React.FC = () => {
                                 {/* Card */}
                                 <motion.div
                                     whileHover={{ scale: 1.02, y: -5 }}
-                                    className="flex-1 bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-md border border-gray-600/30 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-gray-500/50"
+                                    className="flex-1 bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-md border border-gray-600/30 p-4 sm:p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-gray-500/50"
                                 >
-                                    <div className="flex justify-between items-start mb-3">
-                                        <h3 className="text-xl font-bold text-white">{item.title}</h3>
-                                        <span className="text-sm text-cyan-400 font-semibold bg-gray-800/50 px-3 py-1 rounded-full">
+                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-0 mb-3">
+                                        <h3 className="text-lg sm:text-xl font-bold text-white">{item.title}</h3>
+                                        <span className="text-xs sm:text-sm text-cyan-400 font-semibold bg-gray-800/50 px-2 sm:px-3 py-1 rounded-full self-start">
                                             {item.year}
                                         </span>
                                     </div>
-                                    <p className="text-gray-300 mb-4 leading-relaxed">{item.description}</p>
+                                    <p className="text-sm sm:text-base text-gray-300 mb-4 leading-relaxed">{item.description}</p>
                                     
                                     {/* Achievements */}
                                     <div className="space-y-2">
                                         {item.achievements?.map((achievement, index) => (
-                                            <div key={index} className="flex items-center gap-2 text-sm text-gray-400">
+                                            <div key={index} className="flex items-center gap-2 text-xs sm:text-sm text-gray-400">
                                                 <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
                                                 {achievement}
                                             </div>
@@ -138,20 +146,20 @@ const Biography: React.FC = () => {
                                 initial={{ opacity: 0, height: 0 }}
                                 animate={{ opacity: 1, height: "auto" }}
                                 exit={{ opacity: 0, height: 0 }}
-                                className="relative mb-12 flex items-start gap-6"
+                                className="relative mb-8 sm:mb-12 flex flex-col sm:flex-row items-start gap-3 sm:gap-6"
                             >
-                                <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-yellow-500 to-orange-600 flex items-center justify-center shadow-xl mt-2 border-4 border-white/50 z-10 ring-2 ring-white/30">
-                                    <Trophy className="text-white" size={20} />
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-yellow-500 to-orange-600 flex items-center justify-center shadow-xl mt-2 border-4 border-white/50 z-10 ring-2 ring-white/30">
+                                    <Trophy className="text-white" size={18} />
                                 </div>
-                                <div className="flex-1 bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-md border border-gray-600/30 p-6 rounded-2xl shadow-xl">
-                                    <h3 className="text-xl font-bold text-white mb-4">🏆 Competition Highlights</h3>
-                                    <div className="grid gap-4">
+                                <div className="flex-1 bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-md border border-gray-600/30 p-4 sm:p-6 rounded-2xl shadow-xl">
+                                    <h3 className="text-lg sm:text-xl font-bold text-white mb-4">🏆 Competition Highlights</h3>
+                                    <div className="grid gap-3 sm:gap-4">
                                         {competitions.map((comp, i) => (
-                                            <div key={i} className="flex items-center gap-4 p-3 bg-gray-700/30 rounded-lg">
+                                            <div key={i} className="flex items-center gap-3 sm:gap-4 p-2 sm:p-3 bg-gray-700/30 rounded-lg">
                                                 {comp.icon}
                                                 <div className="flex-1">
-                                                    <div className="font-semibold text-white">{comp.name}</div>
-                                                    <div className="text-sm text-gray-400">{comp.achievement} • {comp.year}</div>
+                                                    <div className="text-sm sm:text-base font-semibold text-white">{comp.name}</div>
+                                                    <div className="text-xs sm:text-sm text-gray-400">{comp.achievement} • {comp.year}</div>
                                                 </div>
                                             </div>
                                         ))}
@@ -186,12 +194,12 @@ const Biography: React.FC = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                     viewport={{ once: true }}
-                    className="space-y-6"
+                    className="space-y-4 sm:space-y-6"
                 >
                     {/* Soft Skills */}
-                    <div className="bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-md border border-gray-600/30 rounded-2xl p-6 shadow-xl">
-                        <h3 className="text-xl font-bold text-white mb-4 text-center">💪 Soft Skills</h3>
-                        <div className="space-y-4">
+                    <div className="bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-md border border-gray-600/30 rounded-2xl p-4 sm:p-6 shadow-xl">
+                        <h3 className="text-lg sm:text-xl font-bold text-white mb-4 text-center">💪 Soft Skills</h3>
+                        <div className="space-y-3 sm:space-y-4">
                             {skills.map((skill, index) => (
                                 <motion.div
                                     key={index}
@@ -204,7 +212,7 @@ const Biography: React.FC = () => {
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center gap-2">
                                             {skill.icon}
-                                            <span className="text-white text-sm font-medium">{skill.name}</span>
+                                            <span className="text-white text-xs sm:text-sm font-medium">{skill.name}</span>
                                         </div>
                                         <span className="text-gray-400 text-xs">{skill.level}%</span>
                                     </div>
@@ -223,12 +231,12 @@ const Biography: React.FC = () => {
                     </div>
 
                     {/* Quick Stats */}
-                    <div className="bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-md border border-gray-600/30 rounded-2xl p-6 shadow-xl">
-                        <h3 className="text-xl font-bold text-white mb-4 text-center">📊 Quick Stats</h3>
-                        <div className="space-y-4">
+                    <div className="bg-gradient-to-br from-gray-800/50 to-gray-700/50 backdrop-blur-md border border-gray-600/30 rounded-2xl p-4 sm:p-6 shadow-xl">
+                        <h3 className="text-lg sm:text-xl font-bold text-white mb-4 text-center">📊 Quick Stats</h3>
+                        <div className="space-y-3 sm:space-y-4">
                             {[
-                                { label: "Education Years", value: "19+", color: "text-cyan-400" },
-                                { label: "Certifications", value: "5+", color: "text-purple-400" },
+                                { label: "Education Years", value: "11+", color: "text-cyan-400" },
+                                { label: "Current Level", value: "University", color: "text-purple-400" },
                                 { label: "Projects Completed", value: "15+", color: "text-green-400" },
                                 { label: "Technologies", value: "8+", color: "text-orange-400" }
                             ].map((stat, index) => (
@@ -238,10 +246,10 @@ const Biography: React.FC = () => {
                                     whileInView={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                                     viewport={{ once: true }}
-                                    className="flex justify-between items-center p-3 bg-gray-700/30 rounded-lg"
+                                    className="flex justify-between items-center p-2 sm:p-3 bg-gray-700/30 rounded-lg"
                                 >
-                                    <span className="text-gray-300 text-sm">{stat.label}</span>
-                                    <span className={`font-bold text-lg ${stat.color}`}>{stat.value}</span>
+                                    <span className="text-gray-300 text-xs sm:text-sm">{stat.label}</span>
+                                    <span className={`font-bold text-base sm:text-lg ${stat.color}`}>{stat.value}</span>
                                 </motion.div>
                             ))}
                         </div>
@@ -253,11 +261,11 @@ const Biography: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.8 }}
                         viewport={{ once: true }}
-                        className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 shadow-xl text-center"
+                        className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-4 sm:p-6 shadow-xl text-center"
                     >
-                        <div className="text-4xl mb-3">💡</div>
-                        <p className="text-white font-medium mb-2">"Every line of code is a step toward innovation"</p>
-                        <p className="text-cyan-300 text-sm">- Sahiru Deshan</p>
+                        <div className="text-3xl sm:text-4xl mb-3">💡</div>
+                        <p className="text-white text-sm sm:text-base font-medium mb-2">"Every line of code is a step toward innovation"</p>
+                        <p className="text-cyan-300 text-xs sm:text-sm">- Sahiru Deshan</p>
                     </motion.div>
                 </motion.div>
             </div>

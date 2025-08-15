@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Database, Palette, Fish, Coffee, BookOpen } from "lucide-react";
+import { Code, Database, Palette, Fish, Wrench, BookOpen } from "lucide-react";
 
 const About = () => {
     const skills = [
@@ -11,7 +11,7 @@ const About = () => {
 
     const interests = [
         { icon: <Fish className="text-blue-600" size={24} />, title: "Monster Fish", desc: "Building complex aquarium ecosystems" },
-        { icon: <Coffee className="text-amber-600" size={24} />, title: "Coffee Culture", desc: "Exploring different brewing methods" },
+        { icon: <Wrench className="text-amber-600" size={24} />, title: "Practical", desc: "Hands-on problem solving and building" },
         { icon: <BookOpen className="text-emerald-600" size={24} />, title: "Tech Books", desc: "Always learning new technologies" },
     ];
 
